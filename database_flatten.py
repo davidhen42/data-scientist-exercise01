@@ -33,7 +33,7 @@ table_cols = [column[0] for column in query_result.description]
 full_data_df = pd.DataFrame.from_records(data = query_result.fetchall(), columns = table_cols).set_index('id')
 
 #Export pandas dataframe to csv, print success message with number of rows. 
-export_file_name = 'flattened_data.csv'
+export_file_name = './datasets/flattened_data.csv'
 full_data_df.to_csv(export_file_name, index=False)
 print(f"Success! {len(full_data_df)} rows exported to {export_file_name}.")
 print(full_data_df.head())
