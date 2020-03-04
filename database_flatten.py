@@ -2,6 +2,9 @@ import pandas as pd
 import numpy as np
 import sqlite3
 
+""" File connects to sqlite database to get and flatten data.
+	Data exported to flattened_data.csv in datasets folder. """
+
 #Establish database connection.
 sql_connection = sqlite3.connect('exercise01.sqlite')
 cursor = sql_connection.cursor()

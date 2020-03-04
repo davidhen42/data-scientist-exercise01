@@ -4,8 +4,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
 
+""" Establishes class that stores output metrics for ml models.
+	Class also allows for plotting of auroc and precision/recall.
+	Also contains function to compare output of models (get_winner()).
+	Class and function utilized in test_models.ipynb """
 
-# Use class to cleanly store model predictions and output metrics, and create visualiztions. 
+# Create class to cleanly store model predictions and output metrics, and create visualiztions. 
 class predict_and_get_metrics():
     def __init__(self, model_name, model, X_train_ftrs, X_val_ftrs, y_train_real, y_val_real):
         self.model_name = model_name

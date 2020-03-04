@@ -1,6 +1,11 @@
 import pandas as pd
 import numpy as np
 
+""" Defines several functions to process data;
+	involve data cleaning/feature engineering.
+	Functions utilized in data_exploration.ipynb
+	to get data ready for analysis """
+
 
 # Function to replace given values for education variable with broader, more meaningful categories.
 def educval_to_category(unprepped_df):
